@@ -1,0 +1,167 @@
+/* *** Exercise 1 *** */
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url(./images/final-frontier_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-img1 a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s color;
+}
+.home-img1 a:hover {
+  color: rgb(7, 71, 124);
+}
+
+.home-img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url(./images/luna_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.home-img2 h3 {
+  width: 350px;
+}
+
+/* *** Exercise 2 *** */
+
+.row-inl-block {
+  display: inline-block;
+}
+.block {
+  display: inline-block;
+  width: 48%;
+  margin-left: 2%;
+}
+
+.apollo {
+  margin-top: -390px;
+}
+.hiten {
+  margin-top: -120px;
+}
+
+/* *** Exercise 3 *** */
+
+.disp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "img-1 img-2 img-2"
+    "img-3 img-3 img-4"
+    "img-5 img-6 img-6"
+    "img-7 img-7 img-8 "
+    "img-9 img-10 img-10";
+}
+
+.disp-grid img {
+  height: 639.86px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.img-1 {
+  grid-area: img-1;
+}
+.img-2 {
+  grid-area: img-2;
+}
+.img-4 {
+  grid-area: img-4;
+}
+.img-6 {
+  grid-area: img-6;
+}
+.img-3 {
+  grid-area: img-3;
+}
+.img-5 {
+  grid-area: img-5;
+}
+.img-6 {
+  grid-area: img-6;
+}
+.img-7 {
+  grid-area: img-7;
+}
+.img-8 {
+  grid-area: img-8;
+}
+.img-9 {
+  grid-area: img-9;
+}
+.img-10 {
+  grid-area: img-10;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .block {
+    width: 100%;
+    display: inline;
+  }
+  .apollo {
+    margin-top: 0;
+  }
+  .hiten {
+    margin-top: 0;
+  }
+  .luna {
+    margin-bottom: 580px;
+  }
+  .disp-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "img-1"
+      "img-2"
+      "img-3"
+      "img-4"
+      "img-5"
+      "img-6"
+      "img-7"
+      "img-8"
+      "img-9"
+      "img-10";
+  }
+  .disp-grid img {
+    width: 510px;
+    height: 342px;
+  }
+}
+
+@media (max-width: 991px) {
+  .apollo {
+    margin-top: -550px;
+  }
+}
+
+@media (max-width: 1198px) {
+  .apollo {
+    margin-top: -450px;
+  }
+}
